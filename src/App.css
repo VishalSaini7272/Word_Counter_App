@@ -1,0 +1,31 @@
+/* Global styles for better UI */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+/* Dark mode adjustments */
+body.dark-mode {
+  background-color: #042743;
+  color: white;
+}
+
+/* Light mode adjustments */
+body.light-mode {
+  background-color: white;
+  color: black;
+}

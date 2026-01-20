@@ -1,0 +1,3 @@
+- [x] Remove Alert component from Header.jsx
+- [x] Add Alert component to Home.jsx after Header
+- [x] Update Alert.jsx to use inline styles for alert UI (success style: green background, dark green text, padding, border, full width, centered text)

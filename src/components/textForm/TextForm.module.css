@@ -1,0 +1,172 @@
+.TextForm {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.TextForm h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.formContainer {
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.formContainer:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.upperCaseBtn,
+.lowerCaseBtn,
+.clearBtn {
+  margin-left: 12rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.upperCaseBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.upperCaseBtn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.lowerCaseBtn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.lowerCaseBtn:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+.clearBtn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clearBtn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.upperCaseBtn:disabled,
+.lowerCaseBtn:disabled,
+.clearBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.summery {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.wordCount,
+.timeCount {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.preview {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.previewText {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  min-height: 100px;
+  text-align: left;
+}
+
+/* Dark mode styles */
+.dark {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.dark .formContainer {
+  background-color: #555 !important;
+  color: white !important;
+  border-color: #666;
+}
+
+.dark .previewText {
+  background-color: #444 !important;
+  color: white !important;
+  border-color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .TextForm {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .TextForm h2 {
+    font-size: 1.5rem;
+  }
+
+  .formContainer {
+    height: 150px;
+  }
+
+  .upperCaseBtn,
+  .lowerCaseBtn,
+  .clearBtn {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .summery {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
